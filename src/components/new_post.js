@@ -36,7 +36,6 @@ class NewPost extends Component {
     });
   };
 
-  // This maybe too "clever"?
   onFieldChange = name => event =>
     this.setState(({ post }) => ({
       post: {
@@ -101,7 +100,6 @@ const Field = ({
 }) => {
   const Input = component;
 
-  // Should probably use classnames module here, but I'll let you decide
   const className = [
     'form-group',
     showValidationError && !Boolean(post[name]) && 'has-danger'

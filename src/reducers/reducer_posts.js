@@ -19,8 +19,6 @@ const addPostsToState = (posts, state) => {
 }
 
 export default function(state = {}, action) {
-  // TODO: error handling? If so, I would suggest using redux-actions, since
-  // redux-promise was designed with that in mind.
   if (action.error) {
     return state;
   }
